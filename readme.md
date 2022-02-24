@@ -1,8 +1,7 @@
+1. Run the script
 2. If you want the easy uninstall way, Open cmd in admin mode, type in ```taskkill /f /im OneDrive.exe``` to terminate OneDrive process.
 Then type in either ```%SystemRoot%\System32\OneDriveSetup.exe /uninstall``` if you’re using 32-bit or ```%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall``` if you’re using 64-bit Windows 10.
-
 3. Update: Function:
-
 ```
 function force-mkdir($path) {
 if (!(Test-Path $path)) {
@@ -10,9 +9,7 @@ if (!(Test-Path $path)) {
     New-Item -ItemType Directory -Force -Path $path
 }}
 ```
-
 4. Reg ownership:
-
 ```
 function Takeown-Registry($key) {
     # TODO does not work for all root keys yet
